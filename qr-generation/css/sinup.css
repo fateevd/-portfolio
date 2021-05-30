@@ -1,0 +1,138 @@
+.data__user  {
+    display: none;
+}
+
+
+body {
+    background: linear-gradient(110.04deg, var(--сolor-blue) -0.02%, #29CBFE 99.98%);
+    background-repeat: no-repeat;
+    margin-bottom: 300px;
+    
+}
+
+main {
+    height: 100%;
+}
+.img-text{
+    margin-top: 98px;
+    
+}
+
+.batton { 
+    background-color: #fff;
+    border-radius: 25px;
+    width: 25em;
+    margin: auto;
+    text-align: center;
+}
+
+
+
+input { 
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #05A0D0;
+    margin: 25px 0;
+    color: #05A0D0;
+    font-size: 24px;
+    text-align: center;
+}
+
+
+
+.button { 
+
+    font-size: 24px;
+    margin: 15px 25px;
+    background-color: #05A0D0;
+    color: #fff;
+    border-radius: 25px;
+    padding: 5px 25px;
+    align-items: center;
+    text-align: center;
+    
+}
+
+
+.back { 
+    background-color: red;
+}
+
+
+
+@media (max-width: 450px ) {
+    .header-left{
+        padding-left: 10px;
+    }
+    .button {
+        margin: 15px 10px;
+    }
+    .batton { 
+        width: 20em;
+    }
+   
+    .my{
+        background-color: linear-gradient(110.04deg, var(--сolor-blue) -0.02%, #29CBFE 99.98%);
+        padding: 0;
+        border: none;
+        color: var(--color-white);
+    }
+    .items:not(:last-child) {
+        padding-bottom: 4px;
+    }
+    
+    .nav a { 
+        display: none;
+    }
+    .nav a.visible { 
+        display: block;
+        /* float: right; */
+        /* margin: 10px 5px; */
+        font-size: 25px;
+    }
+
+    nav { 
+        width: 100%;
+    }
+    .nav.resp{
+        position: relative;
+        top: 50px;
+        display: block;
+       
+    }
+   
+    .nav.resp a.visible {
+     position: absolute;
+     top: -40px;
+    
+    }
+    .nav.resp a{
+        width: 100px;
+        display: block;
+        text-align: center;
+        margin-top: 5px;
+    }
+   
+    
+   
+}
+
+a:not(:last-child)
+{
+    margin-right: 10px;
+}
+.visible { 
+    display: none;
+}
+
+button { 
+    cursor: pointer;
+}
+
+.reset {
+    font-size: 18px;
+    background-color: #fff;
+    color: rgb(255, 0, 0);
+    border: none;
+    text-shadow:  0 0 1px red;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/e9b062b5a817255c9b4e280b4c3c708e.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/normolize.css">
+    <link rel="stylesheet" href="css/qr-style.css">
+    <link rel="stylesheet" href="css/style-profel.css">
+    <title>Личные кабинет</title>
+</head>
+<body>
+    <header class="header">
+        <div class="conteiner-nav">
+            <div class="header-nav two-text-content">
+                    <div class="header-left">
+                        <img src="img/QRIco.svg" alt="logo" class="logo">
+                        <div class="name-logo">Генерация <br> QR-code</div>
+                    </div>
+                    <div class="header-right index">
+                        <nav class="index nav" id="myTopnav">
+                            <a href="#" id="visible" class="home-page  visible">&#9776</a>   
+                            <a href="index.html" class="home-page">Главная</a>
+                            <a href="https://t.me/texsuport" target="_blank" class="we">Тех. поддержка</a>
+                            <a href="autorization.html" class="my"> Личный кабинет</a>
+                        </nav>
+                    </div>
+            </div>        
+            </div>
+    </header>
+<main>
+<section class="profil">
+        <div class="container">
+            <div class="post-absolyte">
+                <img class="share" src="img/QRCode.png">
+                <h2 class="user-name" id="Email"></h2>
+            </div>
+            <div class="button"><button id='a' class="reset">Восстановить пароль</button></div>
+        </div>
+</section>
+    <section class="container-qr">
+        <div class="container">
+            <button class="create-Qr-code button-profil" id="qr" > Создать Qr-code</button>
+            <div class="message__history" id="message__history">
+                У вас нет не одного QR-code
+            </div>
+            <div class="qr-code-content"></div>
+        </div>
+    </section>
+</main>
+<footer class="footer">
+    <div class="conteiner-nav">
+        <div class="footer-up">
+            <img src="img/clarity_qr-code-line.svg" alt="logo" class="logo">
+            <div class="name-logo-footer">Генерация <br> QR-code</div>
+        </div>
+        <div class="footer-botton">
+            <h3 class="steps-one title-footer">©2021@Qr-generation.</h3> 
+        </div>
+    </div>
+</footer>
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-database.js"></script> 
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-auth.js"></script>
+
+<script src="script/profil.js"></script>
+<script src="script/nav.js"></script>
+</body>
+</html>

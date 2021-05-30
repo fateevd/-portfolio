@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/e9b062b5a817255c9b4e280b4c3c708e.ico" type="image/x-icon">
+
+    <title>Генерация QR-code</title>
+    <link rel="stylesheet" href="css/normolize.css">
+    <link rel="stylesheet" href="css/qr-style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="conteiner-nav">
+            <div class="header-nav two-text-content">
+                    <div class="header-left">
+                        <img src="img/QRIco.svg" alt="logo" class="logo">
+                        <div class="name-logo">Генерация <br> QR-code</div>
+                    </div>
+                    <div class="header-right index">
+                        <nav class="index nav" id="myTopnav">
+                            <a href="#" id="visible" class="home-page  visible">&#9776</a>   
+                            <a href="index.html" class="home-page">Главная</a>
+                            <a href="https://t.me/texsuport" target="_blank" class="we">Тех подержка</a>
+                            <a href="autorization.html" class="my"> Личный кабинет</a>
+                        </nav>
+                    </div>
+            </div>        
+            </div>
+    </header>
+<main>
+    <section class="main-theme">
+        <div class="container">
+            <div class="two-text-content content">
+                <h2 class="title__name" id="map">Место</h2>
+                <h2 class="title__name" id="thing">Товар</h2>
+            </div>
+            
+            <div class="bloc__qr__generation">
+                <div class="input__data" >
+                    <div class="input" id="input__data">
+                        <input type="text" placeholder="Название" id = "name" class="date data"><br>
+                        <input type="text" placeholder="Адрес" id = "address" class="date data"><br>
+                        <textarea  placeholder="Описание" id = "description" class="data "></textarea><br>
+                        <input type="file" id = "imgI" class="download"><br>
+                        <button id="generation-qr" class="sent-qr sent data">Генерировать</button>
+                    </div>
+                    <div class="input__data__two" id="input__data__two">
+                        <input type="text" id = "IDVK" class="date data" placeholder="Ваш ID c vk.com"><br>
+                        <div class="link__vk">
+                                <a href="https://vk.com/pay" target="_blank" class="vk">Узнать больше про платежную систему</a>
+                        </div>
+                        <button id="generation-qr-things" class="sent-qr sent data">Генерировать</button>
+                    </div>
+                </div>
+                <div class="qr__code">
+                    <h2 class="name__qr__code">Ваш QR-code</h2>
+                    <img  alt="" id="img" class="img__qr__code">
+                    <button  class="sent downs " id="downs" >Скачать</button>
+                </div>
+            </div>
+            
+       </div>     
+    </section>    
+</main>
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-database.js"></script> 
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-storage.js"></script>
+<script src="script/generation.js"></script>
+<script src="script/nav.js"></script>
+
+</body>
+</html>

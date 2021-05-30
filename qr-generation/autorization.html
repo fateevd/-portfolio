@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/e9b062b5a817255c9b4e280b4c3c708e.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/normolize.css">
+    <link rel="stylesheet" href="css/qr-style.css">
+    <link rel="stylesheet" href="css/sinup.css">
+    <title>Авторизация</title>
+</head>
+<body style= "background: linear-gradient(110.04deg, #05A0D0 -0.02%, #29CBFE 99.98%);">
+<header class="header">
+        <div class="conteiner-nav">
+            <div class="header-nav two-text-content">
+                    <div class="header-left">
+                        <img src="img/QRIco.svg" alt="logo" class="logo">
+                        <div class="name-logo">Генерация <br> QR-code</div>
+                    </div>
+                    <div class="header-right index">
+                        <nav class="index nav" id="myTopnav">
+                            <a href="#" id="visible" class="home-page  visible">&#9776</a>   
+                            <a href="index.html" class="home-page">Главная</a>
+                            <a href="https://t.me/texsuport" target="_blank" class="we">Тех подержка</a>
+                            <a href="autorization.html" class="my"> Личный кабинет</a>
+                        </nav>
+                    </div>
+            </div>        
+        </div>
+</header>
+<main>
+     <section class="img-text">
+         <div class="container">
+            <div class="title__data">
+                <div class="text__data__auth" id="text__data__auth">
+                    <div class="batton">
+                        <input type="email" class="input" id="login"  placeholder="Ваш логин или email"> 
+                        <br>
+                        <input type="password" class="input" id="password" placeholder="Ваш пароль">
+                        <br>
+                        <button class="reset" id="reset">Восстановить пароль</button>
+                        <br>
+                        <button class="button" id="sinup">Войти</button><br>
+                        <button class="button back" id="reg" >Регистрация</button>
+                    </div>
+                </div>
+                <div class="data__user" id="data__user">
+                    <div class="batton">
+                    <input type="email" id="Email" class="data" placeholder="Email"><br>
+                    <input type="text" id="Famyli" class="data" placeholder="Фамилия"><br>
+                    <input type="text" id="Name" class="data" placeholder="Имя"><br>
+                    <input type="text" id="passwordi" class="data" placeholder="Пароль"><br>
+                    <input type="text" id="pastwo"  class="data" placeholder="Подтверждения пароля"><br>
+                    <button class="button one__but" id="sinnup" >Зарегистрироваться</button>
+
+                    <button class="button one__but back" id="back" >Вернуться к авторизации</button>
+                    </div>
+                </div>
+            </div>    
+         </div>
+     </section>
+</main>
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-database.js"></script> 
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-auth.js"></script>
+<script src="script/aut.js"></script>
+<script src="script/nav.js"></script>
+</body>
+</html>
