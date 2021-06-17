@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Istok+Web:wght@700&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/datepicker/1.0.10/datepicker.min.css">
+    <link rel="stylesheet" href="assets/normalize.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__inner">
+                <img src="assets/img/logo.png" alt="" class="logo header__logo">
+                <nav class="nav">
+                    <a href="" class="nav__link">Информация</a>
+                    <a href="" class="nav__link">О приложении</a>
+                    <a href="" class="nav__link">Как это работает</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div class="block block--results">
+        <div class="container">
+            <div class="block__inner">
+                <aside class="block__aside">
+                    <div class="block__profile">
+                        <div class="block__head">
+                            <img src="assets/img/user.png" alt="" class="block__img">
+                            Апполионарий Константинопольский
+                        </div>
+                        <div class="block__info">
+                            <div class="block__info-item">азарт</div>
+                            <div class="block__info-item">4 уровень</div>
+                            <button class="block__info-more"></button>
+                        </div>
+                        <div class="block__achiev">
+                            <div class="block__icon block__icon--chat"></div>
+                            <div class="block__icon block__icon--shop"></div>
+                            <div class="block__icon block__icon--achiev"></div>
+                        </div>
+                    </div>
+                    <div class="block__list">
+                        <div class="block__list-item">
+                            <a href="" class="block__list-link">
+                                <div class="block__icon block__icon--mr block__icon--list"></div>
+                                Лента
+                            </a>
+                        </div><div class="block__list-item">
+                            <a href="" class="block__list-link">
+                                <div class="block__icon block__icon--mr block__icon--chat"></div>
+                                Чаты
+                            </a>
+                        </div>
+                        <div class="block__list-item">
+                            <a href="" class="block__list-link">
+                                <div class="block__icon block__icon--mr block__icon--friend"></div>
+                                Друзья
+                            </a>
+                        </div>
+                        <div class="block__list-item">
+                            <a href="" class="block__list-link">
+                                <div class="block__icon block__icon--mr block__icon--task"></div>
+                                Задания
+                            </a>
+                        </div>
+                        <div class="block__list-item">
+                            <a href="" class="block__list-link">
+                                <div class="block__icon block__icon--mr block__icon--achiev"></div>
+                                Достижения
+                            </a>
+                        </div>
+                        <div class="block__list-item">
+                            <a href="" class="block__list-link">
+                                <div class="block__icon block__icon--mr block__icon--shop"></div>
+                                Магазин
+                            </a>
+                        </div>
+                        <div class="block__list-item">
+                            <a href="" class="block__list-link">
+                                <div class="block__icon block__icon--mr block__icon--prize"></div>
+                                Розыгрыши
+                            </a>
+                        </div>
+                        <div class="block__list-item">
+                            <a href="" class="block__list-link">
+                                <div class="block__icon block__icon--mr block__icon--more"></div>
+                                Еще
+                            </a>
+                        </div>
+                    </div>
+                </aside>
+                <div class="block__content block__content--results">
+                    <div class="block__post">
+                        <div class="block__post-head">
+                            <button class="block__post-btn"></button>
+                            <div class="block__name block__name--results">
+                                <div class="block__icon block__icon--mr block__icon--content block__icon--prize"></div>
+                                Результат розыгрыша
+                            </div>
+                        </div>
+                        <div class="block__author">
+                            <img src="assets/img/user-2.png" alt="" class="block__img">
+                            <div class="block__author-box">
+                                <a href="" class="block__author-link">Андрей Петров</a>
+                                <div class="block__author-date">Сегодня в 12:00</div>
+                            </div>
+                        </div>
+                        <div class="block__post-title">Выиграл новый iPhone 12 Pro!</div>
+                        <img src="assets/img/post.png" alt="" class="block__post-img">
+                        <div class="block__actions">
+                            <button class="block__action block__action--like"></button>
+                            <button class="block__action block__action--share"></button>
+                        </div>
+                    </div>
+                    <div class="block__comments">
+                        <div class="block__comments-title">Комментарии</div>
+                        <div class="block__comment">
+                            <img src="assets/img/user-3.png" alt="" class="block__img block__img--comment">
+                            <div class="block__comment-cont">
+                                <div class="block__comment-name">Александр Шишкин</div>
+                                <div class="block__comment-text">Поздравляю! Тоже так хочу!</div>
+                                <div class="block__comment-box">
+                                    <div class="block__comment-date">1 час назад</div>
+                                    <a href="" class="block__comment-answer">Ответить</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block__comment block__comment--answer">
+                            <img src="assets/img/user-4.png" alt="" class="block__img block__img--comment block__img--small">
+                            <div class="block__comment-cont">
+                                <div class="block__comment-name">Александр Шишкин</div>
+                                <div class="block__comment-text">
+                                    <a href="" class="block__comment-text block__comment-text--user">
+                                        Александр,</a>
+                                    поздравляю! Тоже так хочу!
+                                </div>
+                                <div class="block__comment-box">
+                                    <div class="block__comment-date">1 час назад</div>
+                                    <a href="" class="block__comment-answer">Ответить</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block__comment  block__comment--answer">
+                            <img src="assets/img/user-5.png" alt="" class="block__img block__img--comment block__img--small">
+                            <textarea name="" id="" rows="1" class="block__input" placeholder="Ваш комментарий..."></textarea>
+                            <div class="block__actions">
+                                <button class="block__action block__action--medium block__action--close"></button>
+                                <button class="block__action block__action--medium block__action--send"></button>
+                            </div>
+                        </div>
+                        <div class="block__comment">
+                            <img src="assets/img/user-3.png" alt="" class="block__img block__img--comment">
+                            <div class="block__comment-cont">
+                                <div class="block__comment-name">Александр Шишкин</div>
+                                <div class="block__comment-text">Поздравляю! Тоже так хочу!</div>
+                                <div class="block__comment-box">
+                                    <div class="block__comment-date">1 час назад</div>
+                                    <a href="" class="block__comment-answer">Ответить</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block__comment block__comment--mb">
+                            <img src="assets/img/user-6.png" alt="" class="block__img block__img--comment">
+                            <div class="block__comment-cont">
+                                <div class="block__comment-name">Ольга Попова</div>
+                                <div class="block__comment-text">
+                                    <a href="" class="block__comment-text block__comment-text--user">
+                                        Александр,</a>
+                                    поздравляю! Тоже так хочу!
+                                </div>
+                                <div class="block__comment-box">
+                                    <div class="block__comment-date">1 час назад</div>
+                                    <a href="" class="block__comment-answer">Ответить</a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="" class="block__comments-more">Показать еще комментарии </a>
+                        <div class="block__comment">
+                            <img src="assets/img/user-2.png" alt="" class="block__img">
+                            <textarea name="" id="" rows="1" class="block__input block__input--big" placeholder="Ваш комментарий..."></textarea>
+                            <div class="block__actions">
+                                <button class="block__action block__action--big block__action--add"></button>
+                                <button class="block__action block__action--big block__action--send"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <img src="assets/img/logo.png" alt="" class="logo footer__logo">
+                <nav class="footer__nav">
+                    <a href="" class="footer__nav-link">Информация</a>
+                    <a href="" class="footer__nav-link">Приложение</a>
+                    <a href="" class="footer__nav-link">Как это работает</a>
+                    <a href="" class="footer__nav-link footer__nav-link--grey">Политика конфиденциальности</a>
+                    <a href="" class="footer__nav-link footer__nav-link--grey">Договор оферты</a>
+                </nav>
+                <div class="footer__contact">
+                    <a class="footer__contact-link" href="tel:">
+                        <img src="assets/img/tel.svg" alt="" class="footer__img">
+                        +7 918 284 38 45
+                    </a>
+                    <a class="footer__contact-link" href="mailto:">
+                        <img src="assets/img/email.svg" alt="" class="footer__img">
+                        support@denischernakov.ru
+                    </a>
+                    <div class="footer__contact-text">
+                        ИП ЧЕРНАКОВ ДЕНИС ВЯЧЕСЛАВОВИЧ ИНН: 780245116203. ОГРН: 31178473140006. Тел. +7 999 528 34 56. E-mail: denischernakov@gmail.com. 194156, г. Санкт-Петербург, р-н. Выборгский, ул. Манчестерская д. 10, Корп. 2, лит. А, кв. 165 
+                        <br>
+                        <br>
+                        ©2020
+                    </div>
+                </div>
+                <a href="#header" class="footer__link">
+                    <img src="assets/img/arrow.svg" alt="" class="footer__link-img">
+                    Наверх
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/datepicker/1.0.10/datepicker.min.js"></script>
+<script src="js/main.js"></script>
+</html>

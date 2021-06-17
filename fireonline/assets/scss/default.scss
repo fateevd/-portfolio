@@ -1,0 +1,156 @@
+
+
+$polred: #7F4258;
+$red: #9B1A48;
+$dark: #6D5555;
+$bronze: #CFA146;
+$grey: #9E9E9E;
+$burgurred: #581C31;
+$bogrovy: #6B203B;
+$bogrovyinput: #702C44;
+$gray: #F2F0F1;
+$bordo:#782A46;
+
+
+@mixin mask-contain-center {
+    mask-repeat: no-repeat !important;
+    -webkit-mask-repeat: no-repeat !important;
+    mask-position: center center !important;
+    -webkit-mask-position: center center !important;
+    mask-size: contain !important;
+    -webkit-mask-size: contain !important;
+}
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+
+
+body {
+    font-family: "Inter",sans-serif;
+    margin: 0;
+    color: #000;
+    font-size: 16px;
+    line-height: 1.4;
+    height: 100%;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    outline: none;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}  
+
+input {
+    outline: none;
+    border: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.link {
+    color: $bronze;
+    
+}
+
+
+.white-text { 
+    color: #fff;
+}
+
+.color-bordo { 
+    color: $bordo;
+}
+
+.section{
+    &-title{
+        font-family:"Inter",sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 120%;
+    }
+    &-text{
+        font-family: "Inter",sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 150%;
+    }
+    &-smal-title{
+        font-family: "Inter",sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 120%;
+    }
+    &-logup{
+        font-family: "Inter",sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 39px;
+        color: #fff;
+        &-small{
+            font-family: "Inter",sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 140%;
+        }
+    }
+}
+
+
+.text-gray{
+    color: $gray;
+}
+
+.block-gray{
+    background-color: $gray;
+}
+
+.border__line { 
+    margin: 20px 0 40px;
+    background: $red;
+    width: 160px;
+    height: 4px;
+}
+
+.goddess{
+    height: 660.87px;
+}
+
+.arrow { 
+    margin: 0 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-title { 
+    font-family: "Inter",sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 150%;
+
+
+
+    color: #000000;
+
+}

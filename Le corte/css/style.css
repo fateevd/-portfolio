@@ -24,6 +24,7 @@ ul{
     background-image: url(../img/bgc.png);
     height: 100%;
     color: #fff;
+    background-repeat: no-repeat;
 }
 
 .title-contact{
@@ -46,7 +47,7 @@ ul{
 
 .menu-button {
     display: flex;
-    /* padding: 11px ; */
+    justify-content: space-between;
 }
 
 .border__line {
@@ -64,7 +65,7 @@ ul{
 .button { 
     text-align: center;
     margin-top: 617px;
-    padding-bottom: 165px;
+    padding-bottom: 140px;
 }
 
 .nav {
@@ -124,7 +125,7 @@ ul{
 }
 
 .title-name-center{
-    font-family: Montserrat;
+    font-family: "Montserrat" , sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
@@ -148,7 +149,7 @@ ul{
 
 
 .yaer-city {
-    font-family: Playfair Display;
+    font-family: "Playfair Display",sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
@@ -164,7 +165,7 @@ ul{
 }
 
 .new__title {
-    font-family: Montserrat;
+    font-family: 'Montserrat',sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -173,7 +174,7 @@ ul{
 }
 
 .big__text { 
-    font-family: Playfair Display;
+    font-family: "Playfair Display", sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -182,7 +183,7 @@ ul{
 }
 
 .litel__text{ 
-    font-family: Montserrat;
+    font-family: "Montserrat",sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
@@ -210,13 +211,11 @@ ul{
     background: #998431;
     color: #fff;
     padding: 10px 20px;
-    font-family: Montserrat;
+    font-family: "Montserrat",sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
-    /* identical to box height */
-
     text-align: center;
 }
 
@@ -252,7 +251,7 @@ ul{
 }
 
 .contact__form__title { 
-    font-family: Playfair Display;
+    font-family: "Playfair Display",sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 36px;
@@ -281,7 +280,7 @@ ul{
 
 
 .contact__form__text { 
-    font-family: Montserrat;
+    font-family: "Montserrat",sans-serif;
     font-size: 16px;
     line-height: 150%;
     color: #FFFFFF;
@@ -325,7 +324,7 @@ input:last-child {
     border: 1px solid #fff;
     padding: 10px;
     text-transform: uppercase;
-    font-family: Montserrat;
+    font-family: "Montserrat",sans-serif;
     cursor: pointer;
     font-style: normal;
     font-weight: 500;
@@ -392,3 +391,96 @@ input:last-child {
     width: 100px;
 }
 
+
+@media (max-width: 1000px){
+    .contact__form img{
+        width: 20%;
+    }
+}
+@media (max-width: 969px){
+    .content { 
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+    .left__conteiner, .right__conteiner { 
+        margin: 0 auto;
+    }
+    .contact__form img{
+        display: none;
+    }
+}
+
+@media (max-width: 910px) {
+    .border__line { 
+        margin: 0;
+    }
+    .link {
+        display: block;
+    }
+    .nav__conteiner { 
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 800px ) {
+    .title-text { 
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px ){
+    .menu-button { 
+        justify-content: space-around;
+    }
+    .nav:not(:last-child) {
+        margin-right: 0;
+    }
+    .right__conteiner img {
+        width: 100%;
+    }
+    .two__img { 
+        display: block;
+    }
+    .two__img img:first-child { 
+        margin-bottom: 20px;
+    }
+    .border__form { 
+        display: none;
+    }
+    .up__form { 
+        justify-content: center;
+    }
+    .conteiner__witdh{
+        width: 100%;
+    }
+    .input__form { 
+        width: 100%;
+        display: block;
+    }
+    input { 
+        display: block;
+        width: 100px;
+        margin: 0 auto;
+    }
+    input:first-child {
+        margin: 0 auto;
+    }
+    input:last-child{
+        width: 255px;
+    }
+    .sent { 
+        width: 200px;
+    }
+
+}
+
+@media (max-width: 400px){
+    .title-contact{
+        display: block;
+    }
+    .two__img img:not(:last-child) {
+        margin-right: 0;
+   }
+}
