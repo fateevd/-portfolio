@@ -1,0 +1,46 @@
+html { 
+    box-sizing: border-box;
+}
+
+*,::before,::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    margin: 0;
+    padding: 0;
+    font-family: "Proxima Nova", serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+}
+
+img { 
+    max-width: 100%;
+}
+
+a { 
+    text-decoration: none;
+    color: #fff;
+}
+
+ul { 
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+.btn { 
+    border: none;
+    cursor: pointer;
+    background: #ff8b00;
+}
+
+.container {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0;
+}

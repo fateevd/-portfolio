@@ -1,0 +1,31 @@
+
+.ready { 
+    background-image: url(../img/Image-Overlay.png);
+    object-fit: cover;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    padding-bottom: 70px;
+    @include tablet{ 
+        padding-bottom: 35px;
+    }
+    @include mobil { 
+        padding-top: 50px;
+    }
+    &-contacts {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include tablet { 
+            flex-direction: column;
+        }
+       
+    }
+    &-title { 
+        color: #fff;
+        margin-bottom: 0;
+        @include mobil  { 
+            padding-bottom: 30px;
+        }
+    }
+
+}

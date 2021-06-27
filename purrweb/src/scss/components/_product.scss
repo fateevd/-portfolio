@@ -1,0 +1,50 @@
+.product {
+    margin: 110px 0;
+    &-block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include tablet { 
+        flex-direction: column-reverse;
+        justify-content: none;
+    }
+    }
+    &-title { 
+        font-size: 41px;
+        font-weight: 700;
+        color: $color-Purpleheart;
+        margin-bottom: 25px;
+        @include mobil { 
+            font-size: 32px;
+        }
+
+    }
+    .text { 
+        margin-bottom: 35px;
+        margin-right: 120px;
+        @include tablet { 
+            margin: 10px 0;
+        }
+    }
+    
+}
+
+
+.video { 
+    @include big-tablet { 
+        width: 420px;
+        height: 280px;
+    }
+    @include tablet { 
+        margin-bottom: 15px;
+        width: 500px;
+        height: 300px;
+    }
+    @include big-mobil{ 
+        width: 420px;
+        height: 280px;
+    }
+    @include mobil { 
+        width: 250px;
+    }
+}

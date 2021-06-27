@@ -1,0 +1,60 @@
+.main { 
+    padding-top: 150px;
+    @include tablet { 
+        padding-top: 80px;
+    }
+    @include big-mobil { 
+        padding-top: 0;
+    }
+}
+
+.number {
+    &__user{ 
+        display: flex;
+        justify-content: center;
+        @include tablet { 
+            flex-wrap: wrap;
+        }
+    }
+    &__item { 
+        padding: 0 40px;
+        @include tablet { 
+            padding: 0 20px;
+        }
+        @include mobil { 
+            padding: 0;
+        }
+        &:last-child {
+            padding: 0 0 0 40px;
+            @include tablet { 
+                padding: 0 0 0 20px;
+            }
+            @include mobil { 
+                padding: 0;
+            }
+        }
+        &:first-child {
+            padding: 0 40px 0 0;
+            @include tablet { 
+                padding: 0 20px 0 0;
+            }
+            @include mobil { 
+                padding: 0;
+            }
+        }
+        margin-bottom: 135px;
+    }
+}
+
+
+.item__list {
+    text-align: center; 
+    color: $color-Purpleheart;
+    &-title { 
+        padding-top: 40px;
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}
+

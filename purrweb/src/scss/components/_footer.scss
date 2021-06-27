@@ -1,0 +1,115 @@
+
+.footer { 
+    background: $color-MineShaft;
+    margin-top: -20px;
+    &-up{
+        padding: 60px 0 50px;
+        display: flex;
+        @include big-mobil { 
+            flex-direction: column;
+            padding: 30px 0 50px;
+        }
+    }
+    &-nav{
+        display: flex;
+        justify-content: space-between;
+        @include tablet { 
+            flex-wrap: wrap;
+        }
+        &-item{
+            padding: 0 75px;
+            &:last-child { 
+                padding-right: 0;
+            }
+            @include desktop { 
+                padding: 0 35px;
+            }
+            @include big-tablet { 
+                padding: 0 15px;
+            }
+        }
+        &__title { 
+            color: $color-Pizazz;
+            
+            svg { 
+                margin-right: 5px;
+            }
+        }
+    }
+    &-bottom {
+        text-align: center; 
+        padding: 5px 0;
+        background: #252525;
+        color: #9b9b9b;
+    }
+    &__img { 
+        position: absolute;
+        right: 0;
+        transform: translate(-40px, -130px);
+        @include mobil { 
+            transform: translate(-10px, -130px);
+        }
+    }
+}
+
+.nav-item__list { 
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.email { 
+    text-transform: lowercase;
+}
+
+
+.twitter {
+    &-text { 
+        width: 275px;
+        @include big-mobil { 
+            margin: 0 auto 20px;
+        }
+    }
+    &__title { 
+        font-size: 22px;
+        font-weight: 400;
+
+    }
+    &-up {
+        display: flex;
+        background: $color-Purpleheart;
+        align-items: center;
+        font-family: "Myriad Pro";
+        padding: 3px;
+    }
+    &__icon { 
+        background: #5634d1;
+        padding: 15px;
+        border: 1px solid #fff;
+        border-radius: 100%;
+        margin-right: 10px;
+    }
+    &-name { 
+        background: $color-Purpleheart;
+    }
+}
+
+.feed { 
+
+    padding: 0 20px;
+    background: #fff;
+    &:last-child { 
+        padding-bottom: 10px;
+    }
+    &__list { 
+        color: #999;
+        padding: 10px 0 0;
+    }
+    &__link{
+        color: $color-Purpleheart;
+        
+    }
+    &__data { 
+        color: #555;
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,156 @@
+.header {
+    margin-bottom: 150px;
+    padding-top: 32px; 
+    background: $color-Purpleheart;
+    @include tablet { 
+        padding-top: 0;
+    }
+    &__main {
+        padding-top: 135px;
+        max-width: 920px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 63px;
+        @include tablet { 
+            padding-top: 100px;
+            flex-direction: column-reverse;
+        }
+        &-text { 
+        padding-right: 218px;
+        @include big-tablet { 
+            padding-right: 130px;  
+        }
+        @include custom-tablet { 
+            padding-right: 80px;
+        }
+        @include tablet { 
+            padding-right: 0;
+        }
+    }
+    }
+    &__title {
+        font-size: 55px;
+        font-weight: 700;
+        @include mobil { 
+            font-size: 44px;
+        }
+    }
+    &__text { 
+        padding: 30px 0 55px;
+    }
+    .twitter { 
+        width: 150px;
+    }
+    &__bottom { 
+        position: absolute;
+        z-index: 1;
+        left: 50%;
+        transform:translate(-50%, -50%);
+    
+        
+    }
+    &::after { 
+        content: '';
+        padding-top: 15%;
+        background: linear-gradient(to right top, transparent 49.5%, $color-Purpleheart 50%) left / 50.025% 100% no-repeat,
+        linear-gradient(to left top, transparent 49.5%, $color-Purpleheart 50%) right / 50.025% 100% no-repeat;
+        position: absolute;
+        left: 2px;
+        right: 2px;
+       
+    }
+       
+    
+}
+
+.menu { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+.nav {
+    @include tablet { 
+        display: none;
+    }
+    &__link { 
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: 700;
+        line-height: 38px;
+        margin-right: 18px;
+        padding: 0 7px 8px 3px;
+        &:last-child { 
+            margin-right: 0;
+            padding: 0 0 8px;
+        }
+        &:hover { 
+            border-bottom: 3px solid $color-Pizazz;
+            border-width: 100%;
+            
+        }
+    }
+}
+
+
+
+.arrow-down { 
+    margin: 15px auto;
+    text-align: center;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.small-title { 
+    margin-top: 100px;
+    line-height: 16px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    @include tablet { 
+        margin-top: 70px;
+    }
+    @include mobil { 
+        margin-top: 15px;
+    }
+}
+
+.modal-menu:target {
+    display: block;
+    right: 0;
+    position: fixed;
+    z-index: 99999;
+    width: 45%;
+    height: 100%;
+    background: #fff;
+    
+}
+.modal__link { 
+    &:first-child { 
+       color: red; 
+    }
+    color: $color-Purpleheart;
+    display: block;
+    padding: 15px 20px; 
+    font-weight: 700;
+    line-height: 38px;
+    text-align: end;
+}
+
+.modal-menu { 
+    display: none;
+    
+}
+
+.burger { 
+    display: none;
+    padding-right: 25px;
+    @include tablet {
+        display: block;
+    }
+}

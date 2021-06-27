@@ -1,0 +1,43 @@
+@import "default";
+@import "fonts";
+@import "vars";
+@import "mixins";
+@import "custom";
+
+
+.text { 
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 600;
+    &-gray { 
+        color: #878787;
+    }
+}
+
+.btn { 
+    text-transform: uppercase;
+    padding:  12px 34px;
+    border-radius: 4px;
+    font-weight: 700;
+    color: #fff;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.title-main {
+    font-weight: 700;
+    font-size: 60px;
+}
+ 
+
+
+@import "../scss/components/header";
+@import "../scss/components/number-user";
+@import "../scss/components/what-do";
+@import "../scss/components/product";
+@import "../scss/components/ready";
+@import "../scss/components/footer";
+
+
+
+
