@@ -1,0 +1,24 @@
+.btn { 
+    border: none;
+    cursor: pointer;
+    color: $color-white;
+    background: $color-red;
+    font-family: "None serif";
+    font-weight: 500;
+    padding: 18px 36px;
+    &__list { 
+        width: 47px;
+        height: 47px;
+        background: $color-white;
+        color: $color-red;
+        font-weight: 800;
+        &:hover { 
+            background: $color-red;
+            color: $color-white;
+           
+        }
+        &:first-child { 
+            margin-right: 20px;
+        }
+    }
+}

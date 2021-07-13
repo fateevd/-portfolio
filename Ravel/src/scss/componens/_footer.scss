@@ -1,0 +1,63 @@
+.footer { 
+    margin-top: 180px;
+    &__up { 
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 15px;
+        border-bottom: 1px solid $color-grayy;
+        margin-bottom: 15px;
+        @include tablet-big { 
+            flex-wrap: wrap;
+        }
+    }
+    &__title {
+        padding-top: 10px;
+        margin-bottom: 30px;
+        font-family: 'Noto Serif';
+        font-weight: 700;
+        font-size: 18px;
+        @include tablet { 
+            padding-top: 25px;
+        }
+}
+    &__link {
+        color: $color-grayy;
+        display: block;
+        margin-top: 15px;
+        &:hover { 
+            color: $color-red;
+        }
+    }
+    &__bottom {
+        text-align: center;
+        padding-bottom: 15px;
+        color: $color-grayy;
+        &-red { 
+            color: $color-red;
+        }
+    }
+
+}
+
+.contact { 
+    &__text { 
+        margin-top: 15px;
+        color: $color-grayy;
+    }
+    .footer__link { 
+        display: flex;
+        align-items: center;
+    }
+    .link__icon { 
+        margin-right: 10px;
+    }
+}
+
+.newsletter__input { 
+    background: $color-gray;
+    border: none;
+    outline: none;
+    color: $color-red;
+    padding: 15px 100px 15px 10px;
+    margin-bottom: 30px;
+}

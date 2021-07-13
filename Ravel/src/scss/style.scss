@@ -1,0 +1,32 @@
+@import "fonts";
+@import "vars";
+@import "mixins";
+@import "default";
+@import "custom";
+
+
+.section {
+    &-title { 
+        font-family: 'Noto Serif';
+        font-size: 36px;
+        font-weight: 800;
+        color: $color-black;
+        @include tablet { 
+            font-size: 28px;
+        }
+    } 
+    &-text { 
+        font-size: 18px;
+        color: $color-grayy;
+    }
+}
+
+
+@import "componens/header";
+@import "componens/how-world";
+@import "componens/city";
+@import "componens/services";
+@import "componens/place";
+@import "componens/review";
+@import "componens/download";
+@import "componens/footer";

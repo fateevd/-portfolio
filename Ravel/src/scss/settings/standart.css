@@ -1,0 +1,64 @@
+html { 
+    box-sizing: border-box;
+}
+
+*,
+::before,
+::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    margin: 0;
+    padding: 0;
+    font-family: 'PT sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+ .fix { 
+    position: fixed;
+}
+
+button { 
+    cursor: pointer;
+    outline: none;
+
+}
+
+img { 
+    max-width: 100%;
+}
+
+a { 
+    text-decoration: none;
+    color: black;
+}
+
+ul { 
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+.btn { 
+    border: none;
+    cursor: pointer;
+    
+}
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.container__small { 
+    max-width: 1410px;
+    margin: 0 auto;
+    padding: 0;
+}

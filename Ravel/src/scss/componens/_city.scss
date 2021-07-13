@@ -1,0 +1,48 @@
+.city-section { 
+    background: linear-gradient(to right, $color-white 60%,  #f7f7f7 50%);
+    padding: 90px 0;
+    @include tablet { 
+        padding: 25px 0;
+    }
+}
+
+.top-city { 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    @include desktop { 
+        grid-template-columns: repeat(2 , 1fr);
+    }
+    &__title { 
+        color: $color-black;    
+        
+    }
+    &__text { 
+        padding: 40px 0 60px;
+        color: $color-grayy;
+        @include desktop { 
+           flex: 1 1 100%;
+            text-align: center;
+        }
+    }
+   &-red { 
+       color: $color-red;
+   }
+}
+
+
+.city-img { 
+    margin-right: 30px;
+    width: 330px;
+    &:last-child { 
+        margin-right: 0;
+    }
+    
+    @include desktop-small { 
+        margin-right: 0;
+        
+    }
+    @include tablet { 
+        margin-bottom: 25px;
+    }
+}

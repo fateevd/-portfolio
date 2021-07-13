@@ -1,0 +1,81 @@
+
+
+.services { 
+    margin: 180px 0;
+    @include tablet { 
+        margin-top: 70px;
+    }
+    .litehouse { 
+        width: 570px;
+        margin-right: 95px;
+        @include desktop { 
+            width: 400px;
+        }
+        @include tablet-big { 
+            width: 350px;
+            margin-right: 0;
+        }
+    }
+    &__about { 
+        display: flex;
+        align-items: center;
+        @include tablet-big { 
+            flex-direction: column-reverse;
+        }
+    }
+    &__elips { 
+        border-radius: 100%;
+        border: 6px solid $color-red;
+        padding: 18px;
+        @include tablet-big { 
+            display: none;
+        }
+    }
+    
+}
+
+.about { 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-top: 50px;
+    @include tablet-big { 
+        &:last-child { 
+            margin-bottom: 70px;
+        }
+    }
+    &:first-child{
+        padding-top: 80px;
+    }
+    &__icon { 
+        margin-right: 20px;
+        width: 50px;
+    }
+    &__title { 
+        font-family: "Noto Serif";
+        font-weight: 600;
+        font-size: 24px;
+        flex: 0 0 80%;
+        @include mobil-big { 
+            flex: 0 0 60%;
+            font-size: 18px;
+        }
+    }
+    &__text { 
+        flex: 1 1 50%;
+        flex-wrap: wrap;
+        align-self: flex-end;
+        padding-top: 30px;
+        font-size: 18px;
+        color: $color-grayy;
+        margin-left: 70px;
+        padding-bottom: 50px;
+        border-bottom: 1px solid $color-bgray;
+        @include desktop { 
+            margin-left: 0;
+        }
+    }
+    
+}
+
+

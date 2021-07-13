@@ -1,0 +1,45 @@
+.how-world { 
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 73px;
+    @include desktop-small { 
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-content: space-around;
+
+    }
+    @include mobil-big { 
+        grid-template-columns: repeat(1, 1fr);
+    }
+    img { 
+        padding: 30px 0 10px;
+        width: 100px;
+    }
+    &__item { 
+        text-align: center;
+        background-color: $color-witems;
+        margin:  15px;
+        &:hover { 
+            filter: drop-shadow(0px 12px 30px rgba(200, 180, 180, 0.2));
+            background: $color-white;
+        }
+    }
+    margin-bottom: $indent-up;
+    @include tablet { 
+        margin-bottom: 80px;
+    }
+}
+ 
+.world__item-list-text { 
+    padding: 0 36px 60px;
+     
+}
+
+.list-title {
+    padding: 0; 
+    padding-bottom: 20px;
+    font-family: "Noto Serif";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+}

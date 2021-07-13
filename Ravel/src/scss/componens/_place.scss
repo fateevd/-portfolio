@@ -1,0 +1,86 @@
+
+.choose { 
+    &__title { 
+        text-align: center;
+    }
+    &-place {
+        margin: 50px 0 200px;
+
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}
+
+.place {
+
+    &:not(:nth-child(2))
+    {
+        position: relative;
+        top: 200px;
+        @include desktop { 
+            position: static;
+        }
+    }
+    @include desktop { 
+        &:nth-child(1) { 
+            order: 1;
+        }
+        &:nth-child(2)
+        {
+            order: 3;
+        }
+    }
+    &-name { 
+        background: $color-white;
+        position: relative;
+        right: -50px;
+        bottom: 50px;
+        padding: 34px 20px;
+        width: 400px;
+        @include mobil-big {
+            width: 320px;
+            right: 0;
+            padding: 20px 0;
+        }
+
+    }
+    &-name { 
+        display: flex;
+    }
+    &-text { 
+        margin-right: 30px;
+    }
+    &__about {
+        padding-top: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    &__price { 
+        font-size: 18px;
+        font-weight: 700;
+        color: $color-red;
+        margin-right: 5px;
+    }
+    &__btn {
+        background: $color-red;
+        color: $color-white;
+        padding: 15px;
+        margin: 0 auto;
+    }
+    &__two { 
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+}
+
+.rewiews { 
+    margin-right: 5px;
+}
+
+.number__rewies { 
+    color: $color-grayy;
+
+}
