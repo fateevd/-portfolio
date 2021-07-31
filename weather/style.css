@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    background-color: lightslategrey;
+}
+
+
+.weater { 
+    max-width: 500px;
+    margin: 50px auto;
+    text-align: center;
+    border: 2px solid blue;
+    background-color: #fff;
+}
+
+.city { 
+    margin: 10px 0;
+
+}
+
+.error { 
+    color: red;
+    font-size: 45px;
+}
+
+.icon { 
+    width: 70px;
+    margin: 10px auto;
+}
+
+.number { 
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+.status {
+    color: blueviolet;
+ }
+
+.sun { 
+    margin-top: 8px;
+    color: coral;
+}
+
+.sun:nth-child(2) {
+    color: indianred;
+}
